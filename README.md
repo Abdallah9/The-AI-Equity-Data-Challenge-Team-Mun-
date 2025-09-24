@@ -1,10 +1,6 @@
 # The AI Equity Data Challenge (Team MUN)
 As artificial intelligence continues to transform industries in Canada, it’s reshaping the future of work in record time. But who stands to gain the most, and who might be left behind? 
 
-
-
-Great 👍 — here’s a polished **Methods / Data Preparation** section you can drop straight into your notebook, README, or report. I’ll keep it in **markdown style** so it’s easy to reuse:
-
 ---
 
 # 📊 Data Preparation and Sources
@@ -15,7 +11,7 @@ Our analysis draws on three complementary datasets covering **wages, employment,
 
 ## 1. Job Bank Wages (2015–2024)
 
-* **Source:** [Job Bank Canada](https://www.jobbank.gc.ca), “Median Wages by Occupation and Province.”
+* **Source:** [Job Bank Canada – Wages by Occupation](https://www.jobbank.gc.ca/trend-analysis/search-wages)
 * **Raw form:** Individual yearly CSVs (`jobbank_wages_2015.csv` … `jobbank_wages_2024.csv`).
 * **Initial issues:**
 
@@ -33,7 +29,7 @@ Our analysis draws on three complementary datasets covering **wages, employment,
 
 ## 2. Labour Force Survey (LFS) – Employment by Occupation (2015–2024)
 
-* **Source:** Statistics Canada, Table 14-10-0310-01 (formerly CANSIM 282-0155).
+* **Source:** [Statistics Canada Table 14-10-0310-01 (formerly CANSIM 282-0155)](https://www150.statcan.gc.ca/t1/tbl1/en/tv.action?pid=1410031001)
 * **Raw form:** Large CSV with monthly employment counts across occupations and provinces.
 * **Initial issues:**
 
@@ -51,7 +47,7 @@ Our analysis draws on three complementary datasets covering **wages, employment,
 
 ## 3. Labour Force Survey (LFS) – Demographics (2015–2024)
 
-* **Source:** Statistics Canada, Table 14-10-0088-01, “Labour force characteristics of immigrants by country of birth.”
+* **Source:** [Statistics Canada Table 14-10-0088-01 – Labour force characteristics of immigrants by country of birth](https://www150.statcan.gc.ca/t1/tbl1/en/tv.action?pid=1410008801)
 * **Raw form:** Detailed CSV with employment, participation, and unemployment rates by:
 
   * Immigrant status,
@@ -86,8 +82,3 @@ This integrated framework allows us to address questions on:
 * Regional and occupational skill gaps,
 * Demographic impacts of AI adoption.
 
----
-
-✅ This section makes it clear **what data you used, how you cleaned it, and why it matters**.
-
-Do you want me to also help you **visually document this workflow** (like a flowchart showing: *Raw CSV → Cleaning → Final Dataset*) for your notebook/report? That could make it even clearer for presentation.
