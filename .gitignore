@@ -1,0 +1,16 @@
+
+# Ignore data and model files
+data/
+Comp_Challenge/
+*.tif
+*.nc
+*.csv
+*.ipynb_checkpoints
+__pycache__/
+*.pyc
+.env
+.venv/
+
+.DS_Store
+
+
