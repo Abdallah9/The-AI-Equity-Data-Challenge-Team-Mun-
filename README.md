@@ -65,8 +65,74 @@ Our analysis draws on three complementary datasets covering **wages, employment,
   * Cleaned missing values (\~1% of entries).
 * **Final output:** `LFS_demographics_2015_2024_clean.csv`
 * **Purpose:** Provides **demographic insights** (immigrants vs Canadian-born, gender, age cohorts), enabling analysis of **diversity, inclusion, and equity** in employment outcomes.
+  
 
 ---
+
+
+
+**Othe Data Sources & Methodology Summary**
+Our project examines how Artificial Intelligence (AI) reshapes Canada’s labour market, focusing on equity across provinces, demographic groups, and occupations. To achieve this, we integrated Canadian employment data with AI task exposure indices, using an innovative crosswalk across national and international classification systems.
+
+***1. Canadian Employment & Income Data***
+We draw primarily on Statistics Canada’s Labour Force Survey (LFS) and Census-based tabulations. These sources provide:
+Employment counts (value_x)
+! ! !
+Demographic breakdowns (province, age, sex, population group, immigrant status)
+Income measures (median and average income)
+Link: https://www150.statcan.gc.ca/t1/tbl1/en/tv.action?pid=1410043801&utm_source=chatgpt.com
+https://www150.statcan.gc.ca/t1/tbl1/en/tv.action?pid=1410028703&pickMembers%5B0%5D=3.1&pick Members%5B1%5D=4.1&cubeTimeFrame.startMonth=12&cubeTimeFrame.startYear=2024&referenceP
+eriods=20241201%2C20241201
+https://www150.statcan.gc.ca/t1/tbl1/en/tv.action?pid=1410044001&utm_source=chatgpt.com https://www150.statcan.gc.ca/t1/tbl1/en/tv.action?pid=9810064201&utm_source=chatgpt.com
+
+***2. Harmonizing Occupational Codes***
+Occupations are classified differently across time and countries. To ensure comparability:
+!
+We applied the official Statistics Canada concordance file
+(NOC 2016 v1.3 → NOC 2021 v1.0).
+This harmonization ensures older datasets can be aligned to the latest NOC 2021 structure.
+! !
+When mappings were one-to-many, we used transparent weighting strategies.
+Link:
+Correspondence Table: National Occupational Classification (NOC) 2016 V1.3 to National Occupational Classification (NOC) 2021 V1.0 based on GSIM
+
+***3. Linking to NET and SOC Data***
+To connect Canadian occupations with international measures:
+We used Statistics Canada concordances to map NOC 2021 codes → U.S. SOC codes.
+! !
+We then linked to the U.S. O*NET database, which provides task-level occupational descriptors.
+Link:
+https://www.statcan.gc.ca/en/statistical-programs/document/noc2016v1_3-soc2018US
+
+***4. AI Exposure Indices***
+We integrated AI exposure indices from recent labour economics and computer science research, including:
+Webb (2020) – linking AI capabilities to O*NET tasks
+! ! !
+Felten et al. – measuring automation and augmentation potential
+AIOE Data Appendix – consolidated AI occupation exposure estimates
+Link:
+AIOE/AIOE_DataAppendix.xlsx at main · AIOE-Data/AIOE
+
+***5. Employment-Weighted AI Exposure***
+Finally, we computed employment-weighted exposure scores:
+AI_Exposure_group = ( Σ (employment × ai_exposure) ) / ( Σ employment )
+This provides equity-aware insights: which provinces, groups, and occupations face higher AI disruption risks, and where opportunities may emerge.
+
+**Summary**
+By integrating Canadian employment data, official occupational concordances, U.S. task data, and AI exposure indices, we built a unique dataset that illuminates AI’s potential impact on Canada’s workforce. This approach balances credibility, innovation, and accessibility, aligning strongly with the competition’s evaluation criteria.
+
+
+
+Final Data can be found here (Insde final_data_parquet): https://1drv.ms/f/c/d2ea6cbbe5e14963/ElMCe16P-41IlrKaYwEVOgEBcyqMYHb922Q4zkbOnsg7FA?e=SIWAML
+
+
+
+
+
+---
+
+
+
 
 ## Why These Three Datasets?
 
@@ -81,4 +147,39 @@ This integrated framework allows us to address questions on:
 * Wage equity,
 * Regional and occupational skill gaps,
 * Demographic impacts of AI adoption.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
