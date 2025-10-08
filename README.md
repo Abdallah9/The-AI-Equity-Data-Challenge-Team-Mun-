@@ -71,7 +71,7 @@ Our analysis draws on three complementary datasets covering **wages, employment,
 
 
 
-**Othe Data Sources & Methodology Summary**
+**The Data Sources & Methodology Summary**
 Our project examines how Artificial Intelligence (AI) reshapes Canada’s labour market, focusing on equity across provinces, demographic groups, and occupations. To achieve this, we integrated Canadian employment data with AI task exposure indices, using an innovative crosswalk across national and international classification systems.
 
 ***1. Canadian Employment & Income Data***
