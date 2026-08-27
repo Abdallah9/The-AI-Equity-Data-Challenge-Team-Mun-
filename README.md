@@ -88,7 +88,7 @@ https://www150.statcan.gc.ca/t1/tbl1/en/tv.action?pid=1410044001&utm_source=chat
 ***2. Harmonizing Occupational Codes***
 Occupations are classified differently across time and countries. To ensure comparability:
 !
-We applied the official Statistics Canada concordance file
+We applied the official Statistics Canada concordance file 
 (NOC 2016 v1.3 → NOC 2021 v1.0).
 This harmonization ensures older datasets can be aligned to the latest NOC 2021 structure.
 ! !
